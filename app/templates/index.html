@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Bug Classifier</title></head>
+<body>
+  <h2>Bug vs Non-Bug</h2>
+  <form action="/predict_form" method="post">
+    <label>Title</label><br><input name="title" size="60"><br><br>
+    <label>Description</label><br><textarea name="description" rows="6" cols="60"></textarea><br><br>
+    <button type="submit">Predict</button>
+  </form>
+  {% if prediction %}
+    <h3>Prediction: {{ prediction }}</h3>
+    {% if confidence is not none %}<p>Confidence: {{ confidence }}</p>{% endif %}
+  {% endif %}
+</body>
+</html>
+
