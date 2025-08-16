@@ -1,0 +1,6 @@
+title,description,label
+"Submit button crash","App crashes when clicking submit with empty form","Bug"
+"Login fails","401 returned when logging in with valid credentials","Bug"
+"Update docs","Clarify README steps for setup","Non-Bug"
+"UI spacing","Fix padding on settings page","Non-Bug"
+"Null pointer","Crash in payment flow when card is empty","Bug"
