@@ -1,19 +1,20 @@
 # Use Python base image
 FROM python:3.11
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy everything inside the app folder
+# Copy the application code (including model and templates)
 COPY app/ /app/
+
+# Copy the requirements.txt from the root of your repo
+COPY requirements.txt /app/
 
 # Install dependencies
 RUN pip install -r requirements.txt
 
-# Expose port
+# Expose port (optional, but good practice)
 EXPOSE 5000
 
-# Run the app
+# Command to run the app
 CMD ["python", "app.py"]
-
-COPY requirements.txt .
