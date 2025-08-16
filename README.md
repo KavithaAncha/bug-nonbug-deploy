@@ -3,6 +3,30 @@
 This project deploys a machine learning model that classifies software issue reports as **Bug** or **Non-Bug**.  
 It uses **Flask** for the API and is containerized with **Docker** for portability.  
 
+##  Live Demo
+
+🔗 [Click here to try the live app](https://bug-nonbug-deploy.onrender.com)
+
+You can enter the issue title and description on the homepage to receive a classification: **Bug** or **Non-Bug**.
+
+You can also use the `/predict` endpoint directly:
+
+### POST /predict
+
+**Request Example**:
+json
+{
+  "title": "Submit button crash",
+  "description": "App crashes when clicking submit with empty form"
+}
+
+{
+  "prediction": "Bug"
+}
+---
+This project deploys a machine learning model that classifies software issue reports as **Bug** or **Non-Bug**.  
+It uses **Flask** for the API and is containerized with **Docker** for portability.  
+
 ---
 
 ##  Features
