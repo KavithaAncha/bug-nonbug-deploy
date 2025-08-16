@@ -94,4 +94,7 @@ Response:
   API implemented in app/app.py using Flask
   Simple frontend in app/templates/index.html
   Extendable with Swagger or Postman for more robust API testing
+  
+##  Dataset and Training
 
+- The training dataset is available as [`issues.csv`](./issues.csv) in the root directory
