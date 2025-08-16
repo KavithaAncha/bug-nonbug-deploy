@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import joblib, os
 
 app = Flask(__name__)
-MODEL_PATH = os.getenv("MODEL_PATH", "app/model/bug_classifier_pipeline.pkl")
+MODEL_PATH = os.getenv("MODEL_PATH", "model/bug_classifier_pipeline.pkl")
 model = joblib.load(MODEL_PATH)
 
 @app.route("/health", methods=["GET"])
